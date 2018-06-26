@@ -10,24 +10,28 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
     <!-- Custom icons -->
     <link rel="stylesheet" href="css/et-line.css">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Slicknav styles -->
+    <link rel="stylesheet" href="css/slicknav.css">
 		<!-- Custom style -->
 		<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div id="header">
       <div class="container-fluid">
-        <div class="logo">
+        <div class="logo animate-scale">
           <a href="#">
             <img src="img/header-logo.png" alt="">
           </a>
         </div>
         <!-- /.logo -->
-        <ul class="header-nav">
-          <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">works</a></li>
-          <li><a href="#">contact</a></li>
+        <ul class="header-nav animate-scale">
+          <li><a href="#" data-scroll=".inner">Home</a></li>
+          <li><a href="#" data-scroll=".about-studio">About</a></li>
+          <li><a href="#" data-scroll=".services">Services</a></li>
+          <li><a href="#" data-scroll=".portfolio">Works</a></li>
+          <li><a href="#" data-scroll=".contacts">Contact</a></li>
         </ul>
         <!-- /.header-nav -->
       </div>
@@ -35,7 +39,7 @@
     </div>
     <!-- /#header -->
     <div id="main">
-      <div class="inner container-fluid"> 
+      <div class="inner container-fluid animate-opacity"> 
         <div class="inner-content">
           <h1>thomas Rhythm</h1>
           <span>Extraordinary art director & creative minimalism lover</span>
@@ -43,11 +47,11 @@
         <!-- /.inner-content -->
       </div>
       <!-- /.inner -->
-      <div class="default-section about-studio">
+      <div class="default-section about-studio wow slideInUp">
         <div class="container">
           <h3 class="title">About studio</h3>
           <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <blockquote>
                 <p>Design is not making beauty, beauty emerges from selection, affinities, integration, love.
                 </p>
@@ -55,21 +59,30 @@
               </blockquote>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 col-sd-12">
               <div class="team-item">
                 <div class="team-item-photo">
-                  <img src="img/team-img-1.jpg" alt="">
+                  <div class="container-for-flip team-item-front">
+                    <img src="img/team-img-1.jpg" alt="">
+                  </div>
+                  <div class="container-for-flip team-item-skills">
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 18%">
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- /.team-item-photo -->
                 <div class="team-item-info text-center">
@@ -81,7 +94,7 @@
               <!-- /.team-item -->
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-sd-12">
               <div class="team-item">
                 <div class="team-item-photo">
                   <img src="img/team-img-2.jpg" alt="">
@@ -96,7 +109,7 @@
               <!-- /.team-item -->
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-sd-12">
               <div class="team-item">
                 <div class="team-item-photo">
                   <img src="img/team-img-3.jpg" alt="">
@@ -155,7 +168,7 @@
             </ul>
             <div id="branding">
               <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <blockquote>
                 <p>Design is not making beauty, beauty emerges from selection, affinities, integration, love.
                 </p>
@@ -163,11 +176,11 @@
               </blockquote>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
@@ -175,7 +188,7 @@
             </div>
             <div id="web-design">
               <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <blockquote>
                 <p>Design is not making beauty, beauty emerges from selection, affinities, integration, love.
                 </p>
@@ -183,11 +196,11 @@
               </blockquote>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
@@ -195,7 +208,7 @@
             </div>
             <div id="graphic-design">
               <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <blockquote>
                 <p>Design is not making beauty, beauty emerges from selection, affinities, integration, love.
                 </p>
@@ -203,11 +216,11 @@
               </blockquote>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
@@ -215,7 +228,7 @@
             </div>
             <div id="development">
               <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <blockquote>
                 <p>Design is not making beauty, beauty emerges from selection, affinities, integration, love.
                 </p>
@@ -223,11 +236,11 @@
               </blockquote>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
@@ -235,7 +248,7 @@
             </div>
             <div id="photography">
               <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <blockquote>
                 <p>Design is not making beauty, beauty emerges from selection, affinities, integration, love.
                 </p>
@@ -243,11 +256,11 @@
               </blockquote>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-6 col-sd-12">
               <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur fuga vel eveniet officia eius earum iste omnis labore maiores debitis distinctio deleniti, nostrum at accusamus incidunt quos tenetur sed?</p>
             </div>
             <!-- /.col col-4 -->
@@ -261,7 +274,7 @@
       <div class="lets-talk bg-black">
         <div class="container">
           <div class="row">
-            <div class="col col-6">
+            <div class="col col-6 col-md-12">
               <div class="lets-talk-wrapper">
                 <h3 class="title title-white title-light">Looking for exclusive digital services?</h3>
                 <p class="default-text">Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Integer non dapibus diam, ac eleifend lectus.</p>
@@ -270,7 +283,7 @@
               <!-- /.lets-talk-wrapper -->
             </div>
             <!-- /.col col-6 -->
-            <div class="col col-6 text-right">
+            <div class="col col-6 d-none-md text-right">
               <img src="img/lets-talk-img.png" class="lets-talk-img" alt="">
             </div>
             <!-- /.col col-6 -->
@@ -388,7 +401,7 @@
         <div class="container">
           <h3 class="title text-center">Why Choose Us?</h3>
           <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <div class="advantage-icon text-center">
                 <span class="icon-flag"></span>
               </div>
@@ -397,7 +410,7 @@
               <p class="default-text advantage-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint deserunt magnam laborum illum sit suscipit nesciunt amet temporibus dicta soluta, ex neque fugiat, veniam illo assumenda ipsum, sed nulla quos?</p>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <div class="advantage-icon text-center">
                 <span class="icon-clock"></span>
               </div>
@@ -406,7 +419,7 @@
               <p class="default-text advantage-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint deserunt magnam laborum illum sit suscipit nesciunt amet temporibus dicta soluta, ex neque fugiat, veniam illo assumenda ipsum, sed nulla quos?</p>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <div class="advantage-icon text-center">
                 <span class="icon-hotairballoon"></span>
               </div>
@@ -418,7 +431,7 @@
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <div class="advantage-icon text-center">
                 <span class="icon-heart"></span>
               </div>
@@ -427,7 +440,7 @@
               <p class="default-text advantage-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint deserunt magnam laborum illum sit suscipit nesciunt amet temporibus dicta soluta, ex neque fugiat, veniam illo assumenda ipsum, sed nulla quos?</p>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <div class="advantage-icon text-center">
                 <span class="icon-linegraph"></span>
               </div>
@@ -436,7 +449,7 @@
               <p class="default-text advantage-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint deserunt magnam laborum illum sit suscipit nesciunt amet temporibus dicta soluta, ex neque fugiat, veniam illo assumenda ipsum, sed nulla quos?</p>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-12">
               <div class="advantage-icon text-center">
                 <span class="icon-chat"></span>
               </div>
@@ -510,7 +523,7 @@
           </div>
           <!-- /.latest-news-title -->
           <div class="row">
-            <div class="col col-4">
+            <div class="col col-4 col-md-12 ln-wrapper">
               <img src="img/news-img1.jpg" alt="">
               <span class="post-title">New Web Design Trends</span>
               <span class="post-data">John Doe | 10 December</span>
@@ -518,7 +531,7 @@
               <button class="btn btn-small">read more <i class="fas fa-angle-right"></i></button>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-12 ln-wrapper">
               <img src="img/news-img2.jpg" alt="">
               <span class="post-title">Minimalistic Design Forever</span>
               <span class="post-data">John Doe | 9 December</span>
@@ -526,7 +539,7 @@
               <button class="btn btn-small">read more <i class="fas fa-angle-right"></i></button>
             </div>
             <!-- /.col col-4 -->
-            <div class="col col-4">
+            <div class="col col-4 col-md-12 ln-wrapper">
               <img src="img/news-img3.jpg" alt="">
               <span class="post-title">Hipster’s Style in Web</span>
               <span class="post-data">John Doe | 7 December</span>
@@ -560,9 +573,9 @@
         <div class="container">
           <h3 class="title text-center">contact</h3>
           <div class="row">
-            <div class="col col-8 mx-auto">
+            <div class="col col-8 col-lg-12 mx-auto">
               <div class="row">
-                <div class="col col-4">
+                <div class="col col-4 col-sd-12">
                   <div class="contact-item">
                     <div class="rhomb-icon black-icon">
                       <i class="fas fa-phone"></i>
@@ -576,7 +589,7 @@
                   </div>
                   <!-- /.contact-item -->
                 </div>
-                <div class="col col-4">
+                <div class="col col-4 col-sd-12">
                   <div class="contact-item">
                     <div class="rhomb-icon black-icon">
                       <i class="fas fa-map-marker-alt"></i>
@@ -590,7 +603,7 @@
                   </div>
                   <!-- /.contact-item -->
                 </div>
-                <div class="col col-4">
+                <div class="col col-4 col-sd-12">
                   <div class="contact-item">
                     <div class="rhomb-icon black-icon">
                       <i class="fas fa-envelope"></i>
@@ -683,6 +696,12 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu1e1DId8Pet6IX3ZJzTaDgBcXvPPLKk8&callback=initMap" async defer></script>
     <!-- Google map init -->
     <script src="js/google-maps.js"></script>
+    <!-- Slick nav -->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <!-- Header on scroll -->
+    <script src="js/header-on-scroll.js"></script>
+    <!-- WOW animate -->
+    <script src="js/wow.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
   </body>
