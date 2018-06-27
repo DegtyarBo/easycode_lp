@@ -419,7 +419,8 @@ textarea.form-control {
 /* Custom style start */
 /* ==Header== */
 #header{
-	padding: 25px 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -758,6 +759,7 @@ blockquote span {
 .advantage-title {
 	color: #111;
 	text-transform: uppercase;
+	font-size: 0.93rem;
 	letter-spacing: .4em;
 	font-family: 'dosisregular', sans-serif;
 	font-weight: 400;
@@ -1058,8 +1060,9 @@ blockquote span {
 	display: block;
 }
 /* footer */
-.footer-logo {
+#footer {
 	padding-top: 140px;
+	padding-bottom: 60px;
 }
 .footer-nav {
 	margin-top: 27px;
@@ -1082,7 +1085,6 @@ blockquote span {
 }
 .footer-text {
 	display: block;
-	padding-bottom: 60px;
 	margin-top: 12px;
 	color: #999;
 	font-family: 'open_sansregular', sans-serif;
