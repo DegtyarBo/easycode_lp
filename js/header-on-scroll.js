@@ -1,4 +1,5 @@
 const header = $('#header'); // находим элемент
+const scroll_up = $('#scroll-up')
 const windowHeight = $(window).height(); // узнаем высоту экран
 const headerHeight = header.outerHeight(); // узнаем высоту шапки
 
@@ -17,8 +18,15 @@ function onScroll(e) {
             'top': '0',
             'transition': 'top .3s ease-out'
         });
+        scroll_up.css({
+            'display':'block'
+        });
     }
-
+    if (pos < windowHeight) {
+        scroll_up.css({
+            'display':'none'
+        });
+    }
     if (pos < headerHeight + 100) { // если проскролели меньше высоты шапки
         header.css({
             'position': 'absolute',
@@ -42,3 +50,20 @@ function onClick(e) {
 }
 
 scrollBtn.on('click', onClick); // отслеживаем событие клик на все элементы с атрр data-scroll
+
+function scrollTo(){
+    // Scroll to element
+    const scrollBtn = $('data-scroll');
+  
+    function onScroll(e) {
+        e.preventDefault();
+  
+        // Close slick nav
+        $('.header-nav').slicknav('close');
+        let target = $(this).attr('data-scroll');
+        let dist = $(target).offset().top;
+        $('html, body').animate({scrollTop: dist}, 1000, 'swing');
+    }
+  
+    scrollBtn.on('click', onScroll);
+   }

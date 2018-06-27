@@ -458,6 +458,7 @@ textarea.form-control {
 	height: 100vh;
 	background: url(../img/inner-bg.jpg) no-repeat center / cover;
 	text-align: center;
+	position: relative;
 }
 .inner::before{
 	content: '';
@@ -486,6 +487,12 @@ textarea.form-control {
 	color: rgba(254, 254, 254, .7);
 	letter-spacing: 0em;
 }
+.inner-content a .rhomb-icon.white-icon {
+	display: block;
+	position: absolute;
+	right: 50%;
+	bottom: 5%;
+}
 @media(max-width: 991px){
 	.inner{
 		height: auto;
@@ -498,6 +505,9 @@ textarea.form-control {
 		letter-spacing: .7em;
 		text-indent: .7em;
 		margin-bottom: 50px;
+	}
+	.inner-content a .rhomb-icon.white-icon {
+		display: none;
 	}
 }
 @media(max-width: 576px){
@@ -524,7 +534,6 @@ blockquote span {
 	margin-top: 100px;
 }
 .team-item-photo {
-	line-height: 0;
 	height: 450px;
 	position: relative;
 	perspective: 2000px
@@ -538,6 +547,34 @@ blockquote span {
 .team-item-skills {
 	background-color: #000;
 	transform: rotateY(180deg);
+}
+.team-item-skills .skill-title {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.2rem;
+	letter-spacing: .3em;
+	font-family: 'dosisregular', sans-serif;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	display: block;
+}
+.team-item-skills p {
+	color: rgba(255, 255, 255, .5);
+	font-size: 0.87rem;
+	font-family: 'open_sansregular', sans-serif;
+	margin-top: 32px;
+	margin-bottom: 43px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.skill-item {
+	color: rgba(255, 255, 255, .9);
+	font-size: 0.73rem;
+	font-family: 'open_sansregular', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	padding: 0 40px;
 }
 .container-for-flip {
 	position: absolute;
@@ -563,11 +600,12 @@ blockquote span {
 }
 .progress-bar {
 	border: 1px solid #fff;
-	height: 20px;
+	height: 13px;
 	position: relative;
-	margin-top: 30px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 5px;
+	margin-bottom: 20px;
 }
 .progress-bar .progress {
 	position: absolute;
@@ -1049,6 +1087,17 @@ blockquote span {
 	color: #999;
 	font-family: 'open_sansregular', sans-serif;
 	font-size: .73rem;
+}
+
+/* scroll-up */
+#scroll-up .rhomb-icon.white-icon {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	border: 1px solid black;
+}
+#scroll-up {
+	display: none;
 }
 /* Custom style end */
 
